@@ -1,0 +1,3 @@
+../esp-idf/tools/idf.py menuconfig
+../esp-idf/tools/idf.py build
+../esp-idf/tools/idf.py flash
