@@ -88,5 +88,14 @@ while ( !$done ) {
     }
 }
 print "Done with read loop\n";
-print $test_complete_string, "\n";
+
+my $COLOR_NONE="\e[0m";
+my $GREEN="\e[32;1m";
+my $DARK_GREEN="\e[0;32m";
+my $RED="\e[31;1m";
+my $DARK_RED="\e[0;31m";
+my $BROWN="\e[0;33m";
+
+print (($failures) ? $RED : $GREEN);
+print $test_complete_string, $COLOR_NONE, "\n";
 exit $failures;
