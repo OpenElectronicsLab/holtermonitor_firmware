@@ -21,6 +21,10 @@ $*
 *.srec
 *.map
 *.macros_expanded
+build/
+sdkconfig
+sdkconfig.old
+
 
 ####################
 # R temporary files
