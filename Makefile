@@ -12,3 +12,5 @@ flash: build
 check: flash ./run-tests.pl
 	./run-tests.pl
 
+clean:
+	rm -rfv build `cat .gitignore | sed -e 's/#.*//'`
