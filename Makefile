@@ -1,3 +1,5 @@
+SHELL=/bin/bash
+
 default: check
 
 menuconfig: main/test.c
@@ -14,3 +16,4 @@ check: flash ./run-tests.pl
 
 clean:
 	rm -rfv build `cat .gitignore | sed -e 's/#.*//'`
+	pushd main && rm -rfv  `cat ../.gitignore | sed -e 's/#.*//'` && popd
